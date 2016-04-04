@@ -40,7 +40,7 @@ def start(pingServers):
     if len(results) > 0:
         print("Closest:",results[0])
         print(results[0][1])
-    return results[0]
+        return results[0]
 
 if __name__ == '__main__':
     #freeze_support()
