@@ -36,7 +36,8 @@ def start(pingServers):
     
     pool.close()
     pool.join()
-    return results[0]
+    if len(results) > 0:
+        return results[0]
 
 if __name__ == '__main__':
     #freeze_support()
